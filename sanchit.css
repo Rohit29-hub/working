@@ -625,6 +625,7 @@ header {
     }
     .products{
         flex-wrap: nowrap;
+        justify-content: flex-start;
     }
      
 }
