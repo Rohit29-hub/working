@@ -17,7 +17,8 @@
 </head>
 
 <body>
-    <header>
+    <header class="header">
+
         <a href="#" class="logo"><img src="logo.png" alt=""></a>
         <ul class="navmenu">
             <li><a href="#">Home</a></li>
@@ -35,34 +36,45 @@
         </div>
     </header>
 
-    <section class="main-home">
-        <img src="kkk.jpg">
-        <div class="main-text">
-            <h5>Winter Collection</h5>
-            <h1>New Winter<br> Collection</h1>
-            <p>There's Nothing like Trend</p>
-            <a href="#" class="main-btn">Shop Now</a><i class='bx bx-right-arrow-alt'></i>
+    <section class="main-home" style="overflow: hidden;">
+        <div class="main-heroimgContainer">
+            <img id="main-img" src="https://github.com/SANCHIT0407/website/blob/main/kkk.jpg?raw=true" alt="heelo">
+        </div>
+        <div class="content-main">
+            <div class="main-text">
+                <h5>Winter Collection</h5>
+                <h1>New Winter<br> Collection</h1>
+                <p>There's Nothing like Trend</p>
+                <div class="btnMain" onclick="sayAlert()">
+                    <a href="#" class="main-btn">Shop Now</a><i id="icon" class='bx bx-right-arrow-alt'></i>
+                </div>
+            </div>
+            
         </div>
         <div class="down-arrow">
-            <a href="#trending" class="down"><i class='bx bx-down-arrow-alt'></i></a>
+            <div class="iconBox">
+                <a href="#trending" class="down">
+                    <i id="iconDown" class='bx bx-down-arrow-alt'></i></a>
+            </div>
         </div>
     </section>
 
     <!-- trending-products-section -->
-    <section class="trending-product " id="trending">
+    <section class="trending-product " id="trending" >
         <div class="center-text">
             <h2>Our Trending<span>Products</span></h2>
         </div>
 
-
-        <div class="products">
+        <div class="products" style="overflow: hidden;">
             <div class="row">
-                <img src="varcity jacket.jpg" alt="">
+                <div class="imgBox">
+                    <img class="productImg" src="varcity jacket.jpg" alt="">
+                </div>
                 <div class="product-text">
                     <h5>Sale</h5>
                 </div>
                 <div class="heart-icon">
-                    <i class='bx bx-heart'></i>
+                    <i class="fa-solid fa-heart"></i>
                 </div>
                 <div class="ratting">
                     <i class='bx bx-star'></i>
@@ -77,72 +89,16 @@
                 </div>
             </div>
             <div class="row">
-                <img src="track jacket.jpg" alt="">
-                <div class="product-text">
-                    <h5>New</h5>
+                <div class="imgBox">
+                    <img class="productImg" src="bland hoddie.jpg" alt="">
                 </div>
-                <div class="heart-icon">
-                    <i class='bx bx-heart'></i>
-                </div>
-                <div class="ratting">
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bxs-star-half'></i>
-                </div>
-                <div class="price">
-                    <h4>track jacket</h4>
-                    <p>$99 - $129 </p>
-                </div>
-                <div class="row">
-                    <img src="jacket.jpg" alt="">
-                    <div class="product-text">
-                        <h5>Sale</h5>
-                    </div>
-                    <div class="heart-icon">
-                        <i class='bx bx-heart'></i>
-                    </div>
-                    <div class="ratting">
-                        <i class='bx bx-star'></i>
-                        <i class='bx bx-star'></i>
-                        <i class='bx bx-star'></i>
-                        <i class='bx bx-star'></i>
-                        <i class='bx bxs-star-half'></i>
-                    </div>
-                    <div class="price">
-                        <h4>White jacket</h4>
-                        <p>$99 - $129 </p>
-                    </div>
-                </div>
-                <div class="row">
-                    <img src="jacket1.jpg" alt="">
-                    <div class="product-text">
-                        <h5>Sale</h5>
-                    </div>
-                    <div class="heart-icon">
-                        <i class='bx bx-heart'></i>
-                    </div>
-                    <div class="ratting">
-                        <i class='bx bx-star'></i>
-                        <i class='bx bx-star'></i>
-                        <i class='bx bx-star'></i>
-                        <i class='bx bx-star'></i>
-                        <i class='bx bxs-star-half'></i>
-                    </div>
-                    <div class="price">
-                        <h4>Brown leather jacket</h4>
-                        <p>$99 - $129 </p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <img src="bland hoddie.jpg" alt="">
+                
+                
                 <div class="product-text">
                     <h5>Sale</h5>
                 </div>
                 <div class="heart-icon">
-                    <i class='bx bx-heart'></i>
+                      <i id="iconHeart" class="fa-solid fa-heart"></i>
                 </div>
                 <div class="ratting">
                     <i class='bx bx-star'></i>
@@ -157,12 +113,15 @@
                 </div>
             </div>
             <div class="row">
-                <img src="banner.jpg" alt="">
+                <div class="imgBox">
+                    <img class="productImg" src="banner.jpg" alt="">
+
+                </div>
                 <div class="product-text">
                     <h5>Sale</h5>
                 </div>
                 <div class="heart-icon">
-                    <i class='bx bx-heart'></i>
+                      <i class="fa-solid fa-heart"></i>
                 </div>
                 <div class="ratting">
                     <i class='bx bx-star'></i>
@@ -177,12 +136,15 @@
                 </div>
             </div>
             <div class="row">
-                <img src="qqq.jpg" alt="">
+                <div class="imgBox">
+                    <img class="productImg" src="qqq.jpg" alt="">
+
+                </div>
                 <div class="product-text">
                     <h5>Sale</h5>
                 </div>
                 <div class="heart-icon">
-                    <i class='bx bx-heart'></i>
+                      <i class="fa-solid fa-heart"></i>
                 </div>
                 <div class="ratting">
                     <i class='bx bx-star'></i>
@@ -197,12 +159,15 @@
                 </div>
             </div>
             <div class="row">
-                <img src="GGG.jpg" alt="">
+                <div class="imgBox">
+                    <img class="productImg" src="GGG.jpg" alt="">
+
+                </div>
                 <div class="product-text">
                     <h5>Sale</h5>
                 </div>
                 <div class="heart-icon">
-                    <i class='bx bx-heart'></i>
+                      <i class="fa-solid fa-heart"></i>
                 </div>
                 <div class="ratting">
                     <i class='bx bx-star'></i>
@@ -217,12 +182,15 @@
                 </div>
             </div>
             <div class="row">
-                <img src="coat.jpg" alt="">
+                <div class="imgBox">
+                    <img class="productImg" src="coat.jpg" alt="">
+                </div>
+           
                 <div class="product-text">
                     <h5>Sale</h5>
                 </div>
                 <div class="heart-icon">
-                    <i class='bx bx-heart'></i>
+                      <i class="fa-solid fa-heart"></i>
                 </div>
                 <div class="ratting">
                     <i class='bx bx-star'></i>
@@ -236,15 +204,17 @@
                     <p>$99 - $129 </p>
                 </div>
             </div>
+        </div>
+        </div>
     </section>
 
     <!--Client-Review-section-->
 
     <section class="client-reviews">
         <div class="reviews">
-            <h3>Client Reviews</h3>
-            <img src="team1.jpg" alt="">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus culpa similique deserunt voluptate hic
+            <h3 class="cr-1">Client Reviews</h3>
+            <img class="cr-1" src="team1.jpg" alt="">
+            <p class="cr-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus culpa similique deserunt voluptate hic
                 fugit provident nulla quam debitis, molestiae corrupti iste harum. Ipsa accusantium et quo fuga
                 excepturi incidunt!
                 <br> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum dolorem error sint facilis unde
@@ -255,8 +225,8 @@
                 aspernatur!
             </p>
 
-            <h2>Mark Jevenue</h2>
-            <p>CEO of Addle</p>
+            <h2 class="cr-1">Mark Jevenue</h2>
+            <p class="cr-1">CEO of Addle</p>
         </div>
     </section>
     <!--update-news-section-->
@@ -267,7 +237,7 @@
 
 
 
-        <div class="update-cart">
+        <div class="update-cart" id="newsContainer">
             <div class="cart">
                 <img src="bl1.jpg" alt="">
                 <h5>9 jan 2024</h5>
@@ -347,12 +317,8 @@
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis asperiores adipisci ab possimus
                     inventore vel similique, ullam, porro magnam laboriosam maiores, doloremque exercitationem. Nam
                     repudiandae possimus rem voluptatibus quibusdam vel.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque perspiciatis itaque atque placeat ut
-                    non animi optio, officia id adipisci pariatur voluptatibus rem eos molestiae recusandae autem at in
-                    cum.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, tempora. Officiis veritatis sint
-                    voluptas necessitatibus accusamus quis, asperiores itaque eos odit sit possimus laboriosam nesciunt
-                    tempora aspernatur consectetur optio quidem?</p>
+                
+                
             </div>
         </div>
     </section>
@@ -366,5 +332,78 @@
 
 
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js" integrity="sha512-EZI2cBcGPnmR89wTgVnN3602Yyi7muWo8y1B3a8WmIv1J9tYG+udH4LvmYjLiGp37yHB7FfaPBo8ly178m9g4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js" integrity="sha512-OzC82YiH3UmMMs6Ydd9f2i7mS+UFL5f977iIoJ6oy07AJT+ePds9QOEtqXztSH29Nzua59fYS36knmMcv79GOg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+    gsap.registerPlugin(ScrollTrigger);
+    function sayAlert(){
+        alert('This is not a fullSatack application, This only frontend UI');
+    }
 
+    const tl = gsap.timeline();
+    tl.from('.header',{
+        opacity : 0,
+        y : -400,
+        duration : 1,
+    })
+    tl.from('.content-main',{
+        opacity : 0,
+        x : -400,
+        duration : 1,
+    })
+    tl.from('#main-img',{
+        opacity : 0,
+        x : 400,
+        duration : 1,
+    })
+    tl.from('.down-arrow',{
+        opacity : 0,
+        y : -600,
+        duration : 1
+    })
+
+    gsap.from('.row',{
+        opacity : 0,
+        scrollTrigger : {
+            trigger : '.trending-product',
+            start : "center bottom"
+        },
+        x : 300,
+        duration : 0.5,
+        stagger : 0.2,
+    })
+
+    gsap.from('.cr-1',{
+        opacity : 0,
+        scrollTrigger : {
+            trigger : '.client-reviews',
+            start : "center bottom"
+        },
+        y :200,
+        duration : 0.5,
+        stagger : 0.2,
+    })
+
+    gsap.from('.cart',{
+        opacity : 0,
+        scrollTrigger : {
+            trigger : '#newsContainer',
+            start : "center 80%"
+        },
+        y :200,
+        duration : 0.5,
+        stagger : 0.2,
+    })
+    
+    gsap.from('.contact',{
+        opacity : 0,
+        scrollTrigger : {
+            trigger : '.contact',
+            start : "center bottom"
+        },
+        y :200,
+        duration : 0.5,
+    })
+
+</script>
 </html>
